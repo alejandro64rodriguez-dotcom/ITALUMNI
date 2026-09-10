@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Xlumni · Esdeveniments i activitats</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="events">
+
+<script src="scripts/Utils.js"></script>
+    <script src="scripts/App.js"></script>
+
+  <!-- ================= HEADER ================= -->
+
+  <header class="navbar">
+
+    <div class="navbar__menu">
+
+      <input
+        type="checkbox"
+        id="desktop-menu-toggle"
+        class="menu-toggle-checkbox">
+
+      <label
+        for="desktop-menu-toggle"
+        class="menu-btn"
+        aria-label="Menu">
+
+        <span></span>
+        <span></span>
+        <span></span>
+
+      </label>
+
+      <nav class="navbar__dropdown">
+
+        <a href="home.html" class="navbar__link">
+          Inici
+        </a>
+
+        <a href="networking.html" class="navbar__link">
+          Xarxa
+        </a>
+
+        <a href="jobPortal.html" class="navbar__link">
+          Oportunitats de feina
+        </a>
+
+        <a href="events.html" class="navbar__link is-active">
+          Esdeveniments
+        </a>
+
+      </nav>
+
+    </div>
+
+    <a href="home.html" class="brand navbar__brand">
+      <span class="brand__mark">X</span>LUMNI
+    </a>
+
+    <a
+      href="signup.html"
+      class="button button--primary button--pill navbar__cta">
+
+      Apunta't
+
+    </a>
+
+  </header>
+
+  <!-- ================= MAIN ================= -->
+
+  <main class="hero" style="padding:28px">
+
+    <div style="max-width:1100px;margin:0 auto;width:100%">
+
+      <h1 style="margin-bottom:12px">
+        Esdeveniments i activitats
+      </h1>
+
+      <p style="color:var(--color-text-muted);margin-bottom:18px">
+        Descobreix activitats formatives, conferències i esdeveniments de la comunitat Alumni.
+      </p>
+
+      <!-- Cercador -->
+
+      <div
+        style="display:flex;gap:12px;margin-bottom:18px;align-items:center">
+
+        <input
+          id="search"
+          type="search"
+          class="search-bar__input"
+          placeholder="Cerca per títol, categoria o ubicació"
+          style="flex:1;border:1px solid var(--color-border);padding:12px;border-radius:var(--radius-pill)">
+
+        <button
+          id="clear"
+          class="button button--outline">
+
+          Netejar
+
+        </button>
+
+      </div>
+
+      <!-- Aquí es pintaran les targetes -->
+
+      <div
+        id="list"
+        class="l-card-grid">
+
+      </div>
+
+    </div>
+
+  </main>
+
+  <!-- ================= BOTTOM NAV ================= -->
+
+  <nav class="bottom-nav">
+
+    <a
+      href="home.html"
+      class="bottom-nav__item"
+      data-page="home">
+
+      <span class="bottom-nav__icon">&#127968;</span>
+
+      Inici
+
+    </a>
+
+    <a
+      href="networking.html"
+      class="bottom-nav__item"
+      data-page="networking">
+
+      <span class="bottom-nav__icon">&#128101;</span>
+
+      Xarxa
+
+    </a>
+
+    <a
+      href="jobPortal.html"
+      class="bottom-nav__item"
+      data-page="jobPortal">
+
+      <span class="bottom-nav__icon">&#128188;</span>
+
+      Feina
+
+    </a>
+
+    <a
+      <a href="signup.html" class="bottom-nav__item" data-page="profile">
+    <span class="bottom-nav__icon">&#128100;</span>
+    Profile
+  </a>
+      
+
+  </nav>
+
+  <!-- ================= FOOTER ================= -->
+
+  <footer class="site-footer">
+
+    <div class="site-footer__main">
+
+      <a href="home.html" class="brand brand--footer">
+        <span class="brand__mark">X</span>LUMNI
+      </a>
+
+      <nav class="site-footer__links">
+
+        <a href="#">Sobre nosaltres</a>
+
+        <a href="#">Funcionalitats</a>
+
+        <a href="#">Centre d'ajuda</a>
+
+        <a href="#">Contacta'ns</a>
+
+        <a href="#">FAQs</a>
+
+      </nav>
+
+    </div>
+
+    <div class="site-footer__bottom">
+
+      <select aria-label="Language">
+        <option>Català</option>
+      </select>
+
+      <p>
+        © 2026 Xlumni · Privadesa · Termes d'ús
+      </p>
+
+      <div class="site-footer__socials">
+
+        <a href="#" aria-label="Facebook">f</a>
+
+        <a href="#" aria-label="LinkedIn">in</a>
+
+        <a href="#" aria-label="YouTube">&#9658;</a>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+  <script src="data/mockData.js" defer></script>
+
+</body>
+</html>
