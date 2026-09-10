@@ -1,0 +1,59 @@
+/* ==========================================================
+   BUTTONS
+   Botons reutilitzables del projecte
+========================================================== */
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 26px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: transform 0.15s ease,
+              box-shadow 0.15s ease,
+              opacity 0.15s ease;
+}
+
+.button--pill {
+  border-radius: var(--radius-pill);
+}
+
+.button--block {
+  width: 100%;
+}
+
+.button--small {
+  padding: 8px 18px;
+  font-size: 0.85rem;
+}
+
+.button--primary {
+  background: var(--gradient-primary);
+  color: var(--color-text-on-dark);
+  border-color: transparent;
+}
+
+.button--primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 20px rgba(236, 0, 140, 0.35);
+}
+
+.button--outline {
+  background: transparent;
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+.button--outline:hover {
+  background: rgba(236, 0, 140, 0.08);
+}
+
+/* Ajustes en fondos oscuros */
+
+.newsletter .button--primary,
+.hero .button--outline {
+  border-color: var(--color-primary);
+}

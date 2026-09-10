@@ -1,0 +1,43 @@
+/* ==========================================================
+   COMPONENT · BOTTOM NAV
+   Navegació inferior per a dispositius mòbils
+========================================================== */
+
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  display: flex;
+  justify-content: space-around;
+
+  background: var(--color-bg);
+  border-top: 1px solid var(--color-border);
+
+  padding: 10px 8px calc(10px + env(safe-area-inset-bottom));
+}
+
+.bottom-nav__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  flex: 1;
+
+  gap: 2px;
+
+  text-align: center;
+  font-size: 0.65rem;
+
+  color: var(--color-text-muted);
+}
+
+.bottom-nav__icon {
+  font-size: 1.1rem;
+}
+
+.bottom-nav__item.is-active {
+  color: var(--color-primary);
+  font-weight: 600;
+}

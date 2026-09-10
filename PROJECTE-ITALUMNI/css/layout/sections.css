@@ -1,0 +1,149 @@
+/* ==========================================================
+   SECTIONS
+   Seccions principals de la pàgina 
+========================================================== */
+
+
+/* ==========================================================
+   HERO SECTION
+========================================================== */
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 48px;
+  padding: 72px 48px;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+
+/* ==========================================================
+   BENEFITS SECTION
+========================================================== */
+
+.benefits {
+  background: var(--color-bg-soft);
+  padding: 64px 48px;
+}
+
+.benefits__title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 40px;
+}
+
+
+/* ==========================================================
+   TESTIMONIALS SECTION
+========================================================== */
+
+.testimonials {
+  padding: 64px 48px;
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.testimonials__title {
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 700;
+  max-width: 640px;
+  margin: 0 auto 40px;
+}
+
+
+/* ==========================================================
+   NEWSLETTER SECTION
+========================================================== */
+
+.newsletter {
+  background: var(--color-navy);
+  color: var(--color-text-on-dark);
+  padding: 56px 48px;
+  text-align: center;
+}
+
+.newsletter__title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+
+/* ==========================================================
+   FOOTER SECTION
+========================================================== */
+
+.site-footer {
+  background: var(--color-navy);
+  color: var(--color-text-on-dark-muted);
+  padding: 40px 48px 24px;
+}
+
+.site-footer__main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 1120px;
+  margin: 0 auto 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--color-navy-soft);
+}
+
+.site-footer__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  font-size: 0.85rem;
+}
+
+.site-footer__links a:hover {
+  color: var(--color-text-on-dark);
+}
+
+.site-footer__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  max-width: 1120px;
+  margin: 0 auto;
+  font-size: 0.8rem;
+}
+
+.site-footer__bottom select {
+  background: var(--color-navy-soft);
+  color: var(--color-text-on-dark);
+  border: none;
+  border-radius: var(--radius-pill);
+  padding: 6px 14px;
+  font-family: inherit;
+  font-size: 0.8rem;
+}
+
+.site-footer__socials {
+  display: flex;
+  gap: 12px;
+}
+
+.site-footer__socials a {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--color-navy-soft);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  color: var(--color-text-on-dark);
+}
+
+.site-footer__socials a:hover {
+  background: var(--color-primary);
+}

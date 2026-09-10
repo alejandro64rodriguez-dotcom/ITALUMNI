@@ -1,0 +1,53 @@
+/* ==========================================================
+   RESPONSIVE · DESKTOP
+   Breakpoint ≥ 1024px
+========================================================== */
+
+@media (min-width: 1024px) {
+
+  /* ========================================================
+     HERO
+  ======================================================== */
+
+  .hero {
+    grid-template-columns: 1fr 1fr;
+    text-align: left;
+    padding: 80px 48px;
+  }
+  .hero__image img {
+  width: 700px;   /* ← cambia este valor para el ancho */
+  height: 400px;  /* ← cambia este valor para el alto */
+    max-width: none;   /* ← esto anula el límite del 100% */
+  object-fit: cover; /* recorta manteniendo proporción, sin deformar */
+  border-radius: 12px; /* opcional, si quieres mantener las esquinas redondeadas que ya tiene */
+}
+
+  .hero__text {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .hero__actions {
+    justify-content: flex-start;
+  }
+  
+
+  /* ========================================================
+     GRIDS
+  ======================================================== */
+
+  .l-benefits-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .l-testimonial-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .l-card-grid {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   gap: 24px;
+    }
+
+}

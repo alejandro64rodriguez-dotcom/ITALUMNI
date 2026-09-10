@@ -1,0 +1,92 @@
+/* ==========================================================
+   COMPONENT · FORMS
+   Formularis reutilitzables
+========================================================== */
+
+
+/* ==========================================================
+   FORM FIELD
+========================================================== */
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  margin-bottom: 16px;
+}
+
+.form-field label {
+  font-weight: 600;
+}
+
+.form-field input[type="text"],
+.form-field input[type="email"],
+.form-field textarea,
+.form-field select {
+  width: 100%;
+
+  padding: 12px 15px;
+
+  border: 1px solid #ddd;
+  border-radius: 8px;
+
+  box-sizing: border-box;
+
+  font-family: inherit;
+  font-size: 16px;
+}
+
+.form-field input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+
+/* ==========================================================
+   FORM ACTIONS
+========================================================== */
+
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+
+  margin-top: 20px;
+}
+
+
+/* ==========================================================
+   NEWSLETTER FORM
+========================================================== */
+
+.newsletter__form {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.newsletter__input {
+  flex: 1;
+
+  padding: 12px 18px;
+
+  border: 1px solid var(--color-navy-soft);
+  border-radius: var(--radius-pill);
+
+  background: var(--color-navy-soft);
+
+  color: var(--color-text-on-dark);
+
+  font-family: inherit;
+  font-size: 0.9rem;
+}
+
+.newsletter__input::placeholder {
+  color: var(--color-text-on-dark-muted);
+}
+
+.newsletter__input:focus {
+  outline: 2px solid var(--color-primary);
+}

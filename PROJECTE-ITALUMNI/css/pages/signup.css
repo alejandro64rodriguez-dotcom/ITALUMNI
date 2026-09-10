@@ -1,0 +1,77 @@
+/* ==========================================================
+   PAGE · SIGNUP
+========================================================== */
+
+
+/* ==========================================================
+   PAGE BACKGROUND
+========================================================== */
+
+body[data-page="signup"] {
+  margin: 0;
+  min-height: 100vh;
+
+  background:
+    linear-gradient(rgba(0, 0, 0, .35), rgba(0, 0, 0, .35)),
+    url("../images/image2.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+/* ==========================================================
+   NAVBAR
+========================================================== */
+
+body[data-page="signup"] .navbar {
+  position: relative;
+  z-index: 10;
+}
+
+
+/* ==========================================================
+   SIGNUP LAYOUT
+========================================================== */
+
+.signup {
+  min-height: calc(100vh - 80px);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 40px 20px;
+}
+
+
+/* ==========================================================
+   SIGNUP CARD
+========================================================== */
+
+.signup__card {
+  width: 100%;
+  max-width: 480px;
+
+  padding: 35px;
+
+  background: var(--color-bg);
+
+  border-radius: 20px;
+
+  box-shadow: 0 15px 40px rgba(0, 0, 0, .25);
+}
+
+.signup__card h1 {
+  margin: 0 0 10px;
+  text-align: center;
+}
+
+.signup__card p {
+  margin-bottom: 25px;
+
+  text-align: center;
+
+  color: var(--color-text-muted);
+}

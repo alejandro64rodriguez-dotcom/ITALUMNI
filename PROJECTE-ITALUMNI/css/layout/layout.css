@@ -1,0 +1,78 @@
+/* ==========================================================
+   LAYOUT
+========================================================== */
+
+
+/* ==========================================================
+   VIEWS
+   Control mòbil / escritori
+========================================================== */
+
+.l-mobile-view {
+  display: block;
+}
+
+.l-desktop-view {
+  display: none;
+}
+
+
+/* ==========================================================
+   MOBILE APP LAYOUT
+========================================================== */
+
+.l-app-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--color-bg-soft);
+  padding-bottom: 76px; /* deixa espai  per  bottom navigation */
+}
+
+
+.l-app-content {
+  flex: 1;
+  padding: 0 20px;
+}
+
+
+/* ==========================================================
+   CARDS GRID
+========================================================== */
+
+.l-card-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+
+/* ==========================================================
+   DESKTOP GRIDS
+========================================================== */
+
+.l-benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+
+.l-testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+
+/* ==========================================================
+   CONTENT PAGES
+   Pàgines internes:
+   Networking, Jobs, etc.
+========================================================== */
+
+.l-content-page {
+  padding-bottom: 96px;
+}

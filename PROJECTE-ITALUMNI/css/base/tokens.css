@@ -1,0 +1,38 @@
+/* ==========================================================
+   01. DESIGN TOKENS
+   Variables globals del projecte
+========================================================== */
+
+:root {
+  /* ---------- Colores ---------- */
+  --color-primary: #ec008c;
+  --color-primary-dark: #c2007a;
+  --color-accent: #7c3aed;
+  --gradient-primary: linear-gradient(135deg, #ec008c 0%, #7c3aed 100%);
+
+  --color-navy: #14152b;
+  --color-navy-soft: #1d1e3d;
+
+  --color-bg: #ffffff;
+  --color-bg-soft: #f7f7fb;
+
+  --color-text: #1f2233;
+  --color-text-muted: #6b6f84;
+  --color-text-on-dark: #ffffff;
+  --color-text-on-dark-muted: #a9abc4;
+
+  --color-border: #e7e7f1;
+  --color-star: #ffb400;
+
+  /* ---------- Bordes ---------- */
+  --radius-pill: 999px;
+  --radius-card: 18px;
+  --radius-card-sm: 12px;
+
+  /* ---------- Sombras ---------- */
+  --shadow-card: 0 4px 20px rgba(20, 21, 43, 0.06);
+  --shadow-card-hover: 0 10px 28px rgba(20, 21, 43, 0.12);
+
+  /* ---------- Tipografía ---------- */
+  --font-base: 'Source Sans 3', -apple-system, BlinkMacSystemFont, sans-serif;
+}

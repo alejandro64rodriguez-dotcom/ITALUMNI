@@ -1,0 +1,70 @@
+/* ==========================================================
+   RESPONSIVE · TABLET
+   Breakpoint ≥ 768px
+========================================================== */
+
+@media (min-width: 768px) {
+
+  /* ========================================================
+     LAYOUT
+  ======================================================== */
+
+  .l-mobile-view {
+    display: none;
+  }
+
+  .l-desktop-view {
+    display: block;
+  }
+
+  .l-content-page {
+    padding-bottom: 28px;
+  }
+
+
+  /* ========================================================
+     NAVIGATION
+  ======================================================== */
+
+  .bottom-nav {
+    display: none;
+  }
+
+  .site-footer {
+    display: block;
+  }
+
+
+  /* ========================================================
+     HERO
+  ======================================================== */
+
+  .hero {
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: 56px 32px;
+  }
+
+  .hero__text {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero__actions {
+    justify-content: center;
+  }
+
+
+  /* ========================================================
+     GRIDS
+  ======================================================== */
+
+  .l-benefits-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .l-testimonial-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}

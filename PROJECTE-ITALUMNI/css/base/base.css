@@ -1,0 +1,25 @@
+/* ==========================================================
+   BASE
+   Estilos globales del proyecto
+========================================================== */
+
+/* ---------- Brand ---------- */
+
+.brand {
+  font-family: var(--font-base);
+  font-weight: 800;
+  font-size: 1.4rem;
+  letter-spacing: 0.02em;
+  color: var(--color-text);
+}
+
+.brand__mark {
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.brand--footer {
+  color: var(--color-text-on-dark);
+}
