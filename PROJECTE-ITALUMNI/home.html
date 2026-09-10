@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projecte 1 ITAlumni - Home page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="home">
+  <script src="scripts/Utils.js"></script>
+  <script src="scripts/App.js"></script>
+
+
+  <!-- ============ MOBILE VIEW ============ -->
+
+  
+  <div class="l-mobile-view">
+    <div class="l-app-page">
+      <header class="app-header">
+        <input type="checkbox" id="mobile-menu-toggle" class="menu-toggle-checkbox">
+        <label for="mobile-menu-toggle" class="menu-btn" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </label>
+
+        <h1>Home</h1>
+     <a href="signup.html" class="avatar" aria-label="Perfil">&#128100;</a> 
+        <nav class="mobile-dropdown">
+           <a href="home.html" class="navbar__link is-active">Inici</a>
+          <a href="networking.html" class="navbar__link">Xarxa</a>
+          <a href="jobPortal.html" class="navbar__link">Oportunitats de feina</a>
+         <a href="events.html" class="navbar__link">Esdeveniments</a>
+        </nav>
+      </header>
+
+      <div class="search-bar">
+        <span class="search-bar__icon">&#128269;</span>
+        <input type="search" class="search-bar__input" placeholder="Search alumni...">
+      </div>
+
+      <main class="l-app-content">
+        <div class="l-card-grid">
+          <article class="feature-card">
+            <div class="feature-card__image feature-card__image--networking"></div>
+            <h3 class="feature-card__title">Networking</h3>
+            <p class="feature-card__text">Connect with professionals in your field.</p>
+            <a href="networking.html" class="button button--outline button--block button--small">Explore</a>
+          </article>
+          <article class="feature-card">
+            <div class="feature-card__image feature-card__image--jobs"></div>
+            <h3 class="feature-card__title">Job Opportunities</h3>
+            <p class="feature-card__text">Discover openings tailored to your skills.</p>
+            <a href="jobPortal.html" class="button button--outline button--block button--small">Search Jobs</a>
+          </article>
+        </div>
+      </main>
+
+      <footer>
+        <nav class="bottom-nav">
+          <a href="home.html" class="bottom-nav__item is-active">
+            <span class="bottom-nav__icon">&#127968;</span>
+            Inici
+          </a>
+          <a href="networking.html" class="bottom-nav__item">
+            <span class="bottom-nav__icon">&#128101;</span>
+            Xarxa
+          </a>
+          <a href="jobPortal.html" class="bottom-nav__item">
+            <span class="bottom-nav__icon">&#128188;</span>
+            Oportunitats de feina
+          </a>
+          <a href="signup.html" class="bottom-nav__item">
+            <span class="bottom-nav__icon">&#128100;</span>
+            Profile
+          </a>
+        </nav>
+      </footer>
+    </div>
+  </div>
+
+  <!-- ============ DESKTOP VIEW ============ -->
+
+  
+  <div class="l-desktop-view">
+    <header class="navbar">
+      <div class="navbar__menu">
+        <input type="checkbox" id="desktop-menu-toggle" class="menu-toggle-checkbox">
+        <label for="desktop-menu-toggle" class="menu-btn" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </label>
+
+        <nav class="navbar__dropdown">
+          <a href="home.html" class="navbar__link is-active">Inici</a>
+          <a href="networking.html" class="navbar__link">Xarxa</a>
+          <a href="jobPortal.html" class="navbar__link">Oportunitats de feina</a>
+         <a href="events.html" class="navbar__link">Esdeveniments</a>
+
+        </nav>
+      </div>
+
+      <a href="home.html" class="brand navbar__brand"><span class="brand__mark">X</span>LUMNI</a>
+
+      <a href="signup.html" class="button button--primary button--pill navbar__cta">Apunta't</a>
+    </header>
+
+    <section class="hero">
+      <div class="hero__copy">
+        <h1 class="hero__title">Benvingut, <span class="hero__title-accent">Alumni</span></h1>
+        <p class="hero__text">Connectant i empoderant a la nostra comunitat global d'alumnes</p>
+        <div class="hero__actions">
+          <a href="signup.html" class="button button--primary button--pill">Uneix-te</a>
+          <a href="#benefits" class="button button--outline button--pill">Mira que fem</a>
+        </div>
+      </div>
+      <div class="hero__media">
+     <div class="hero__image">
+        <img src="css/images/image.png">
+        </div>
+      </div>
+    </section>
+
+    <section class="benefits" id="benefits">
+      <h2 class="benefits__title">Què guanyes en formar-ne part?</h2>
+      <div class="l-benefits-grid">
+        <article class="benefit-card">
+          <div class="benefit-card__icon">&#127891;</div>
+          <p class="benefit-card__text">Comparteix i no perdis el contacte: Puja els teus moments importants, explica com va anar i queda amb els teus companys. Una xarxa per estar més a prop.</p>
+          <a href="signup.html" class="button button--primary button--pill button--small">Apunta't ja</a>
+        </article>
+        <article class="benefit-card">
+          <div class="benefit-card__icon">&#128172;</div>
+          <p class="benefit-card__text">Participa en discussions: Intercanvia coneixements, punts de vista i opinions sobre temes que t'interessen.</p>
+          <a href="signup.html" class="button button--primary button--pill button--small">Apunta't ja</a>
+        </article>
+        <article class="benefit-card">
+          <div class="benefit-card__icon">&#128101;</div>
+          <p class="benefit-card__text">Xarxa Alumni: Connecta amb companys de promoció, fes noves amistats i crea records per durar tota la vida.</p>
+          <a href="signup.html" class="button button--primary button--pill button--small">Apunta't ja</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="testimonials">
+      <h2 class="testimonials__title">"T'ensenyem el que opinen els nostres súper-usuaris!"</h2>
+      <div class="l-testimonial-grid">
+        <article class="testimonial-card">
+          <div class="testimonial-card__person">
+            <div class="testimonial-card__avatar testimonial-card__avatar--mikel"></div>
+            <div>
+              <div class="testimonial-card__name">Mikel</div>
+              <div class="testimonial-card__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            </div>
+          </div>
+          <p class="testimonial-card__quote">"Gràcies a IT Alumni vaig aconseguir la feina dels meus somnis en el món tech amb el seu increïble programa de mentoria."</p>
+        </article>
+        <article class="testimonial-card">
+          <div class="testimonial-card__person">
+            <div class="testimonial-card__avatar testimonial-card__avatar--emma"></div>
+            <div>
+              <div class="testimonial-card__name">Emma</div>
+              <div class="testimonial-card__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            </div>
+          </div>
+          <p class="testimonial-card__quote">"La meva xarxa d'aquesta comunitat ha estat clau: va revolucionar la meva carrera i em va mostrar camins insospitats."</p>
+        </article>
+        <article class="testimonial-card">
+          <div class="testimonial-card__person">
+            <div class="testimonial-card__avatar testimonial-card__avatar--laia"></div>
+            <div>
+              <div class="testimonial-card__name">Laia</div>
+              <div class="testimonial-card__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            </div>
+          </div>
+          <p class="testimonial-card__quote">"IT Alumni em va donar les eines i l'autoestima per fer realitat el meu somni d'emprendre."</p>
+        </article>
+      </div>
+      <div class="testimonials__nav">
+        <button type="button" class="testimonials__nav-button" aria-label="Previous">&#8249;</button>
+        <button type="button" class="testimonials__nav-button" aria-label="Next">&#8250;</button>
+      </div>
+    </section>
+
+    <section class="newsletter">
+      <h3 class="newsletter__title">"No et perdis res, subscriu-te!"</h3>
+      <form class="newsletter__form">
+        <input type="email" class="newsletter__input" placeholder="El teu email" required>
+        <button type="submit" class="button button--primary button--pill">Subscriu-te</button>
+      </form>
+    </section>
+
+    <footer class="site-footer">
+      <div class="site-footer__main">
+        <a href="home.html" class="brand brand--footer"><span class="brand__mark">X</span>LUMNI</a>
+        <nav class="site-footer__links">
+          <a href="#">Sobre nosaltres</a>
+          <a href="#">Funcionalitats</a>
+          <a href="#">Centre d'ajuda</a>
+          <a href="#">Contacta'ns</a>
+          <a href="#">FAQs</a>
+          <a href="jobPortal.html">Oportunitats laborals</a>
+        </nav>
+      </div>
+      <div class="site-footer__bottom">
+        <select aria-label="Language"><option>Català</option></select>
+        <p>© 2026 Xllumni · Privadesa · Termes d'ús</p>
+        <div class="site-footer__socials">
+          <a href="#" aria-label="Facebook">f</a>
+          <a href="#" aria-label="LinkedIn">in</a>
+          <a href="#" aria-label="YouTube">&#9658;</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
