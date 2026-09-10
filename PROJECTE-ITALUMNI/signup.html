@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Apunta't · Xlumni</title>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="signup">
+
+<script src="scripts/Utils.js"></script>
+    <script src="scripts/App.js"></script>
+ 
+
+  <main class="signup">
+    <div class="signup__card">
+      <h1 style="margin-bottom:8px">Apunta't a Xlumni</h1>
+      <p style="color:var(--color-text-muted);margin-bottom:18px">Omple el formulari per unir-te a la comunitat</p>
+
+      <form id="signupForm">
+        <div class="form-field">
+          <label for="name">Nom complet</label>
+          <input id="name" name="name" type="text" required>
+        </div>
+        <div class="form-field">
+          <label for="email">Correu electrònic</label>
+          <input id="email" name="email" type="email" required>
+        </div>
+        <div class="form-field">
+          <label for="role">Rol / Títol</label>
+          <input id="role" name="role" type="text">
+        </div>
+        <div class="form-field">
+          <label for="company">Empresa (opcional)</label>
+          <input id="company" name="company" type="text">
+        </div>
+        <div class="form-field">
+          <label for="skills">Habilitats (separades per coma)</label>
+          <input id="skills" name="skills" type="text">
+        </div>
+        <div class="form-field">
+          <label><input id="agree" type="checkbox" required> Accepto rebre comunicacions i complir les normes de la comunitat</label>
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" class="button button--primary">Enviar</button>
+          <a href="home.html" class="button button--outline">Cancel·lar</a>
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <div id="toast" class="toast">Inscrit correctament</div>
+
+  <script src="data/mockData.js" defer></script>
+  <script src="scripts/app.js" defer></script>
+</body>
+</html>
