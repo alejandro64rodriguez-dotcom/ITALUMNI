@@ -37,18 +37,19 @@
       </button>
       </article>`;
   }
-
-  function renderJobCard(job) {
-    return `
-      <article class="feature-card" data-id="${job.id}">
-        ${favoriteButtonHTML('jobs', job.id)}
-        <div class="feature-card__image feature-card__image--jobs"></div>
-        <h3 class="feature-card__title">${job.title}</h3>
-        <p class="feature-card__text">${job.company} · ${job.location}<br>${job.type}</p>
-        <p class="feature-card__text">${job.tags.join(', ')}</p>
-      </article>`;
-  }
-
+function renderJobCard(job) {
+  return `
+    <article class="job-card" data-id="${job.id}">
+      <div class="job-card__content">
+        <h3 class="job-card__title">${job.title}</h3>
+        <p class="job-card__meta">${job.type}</p>
+        <p class="job-card__meta">${job.company}</p>
+        <p class="job-card__meta">${job.location} | Apply by ${job.posted || 'Nov 15'}</p>
+        <button class="button button--outline button--pill job-card__cta">Apply Now</button>
+      </div>
+      <div class="job-card__image"></div>
+    </article>`;
+}
   function renderEventCard(event) {
     return `
       <article class="feature-card" data-id="${event.id}">

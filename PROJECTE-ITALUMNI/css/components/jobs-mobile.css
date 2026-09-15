@@ -1,0 +1,300 @@
+/* ==========================================================
+   JOBS · MÒBIL
+========================================================== */
+
+/* Per defecte (desktop): amagats */
+.mobile-header,
+.bottom-nav,
+.jobs__filters-mobile {
+  display: none;
+}
+
+/* ==========================================================
+   MÒBIL · < 1024px
+========================================================== */
+@media (max-width: 1023px) {
+
+  /* ---------- Amaguem el navbar desktop ---------- */
+  .navbar--desktop {
+    display: none;
+  }
+
+  /* ---------- HEADER MÒBIL ---------- */
+  .mobile-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 16px 20px;
+
+    background: #fff;
+  }
+
+  .mobile-header__back {
+    font-size: 1.4rem;
+    color: var(--color-text);
+    text-decoration: none;
+
+    width: 32px;
+
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .mobile-header__title {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--color-text);
+  }
+
+  .mobile-header__actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .mobile-header__chart {
+    font-size: 1.1rem;
+    color: var(--color-text);
+  }
+
+  .mobile-header__avatar {
+    width: 32px;
+    height: 32px;
+
+    border-radius: 50%;
+    overflow: hidden;
+
+    display: block;
+
+    background: #e0e0e0;
+  }
+
+  .mobile-header__avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* ---------- AMAGUEM EL TÍTOL "Jobs" ---------- */
+  .jobs__title {
+    display: none;
+  }
+
+  /* ---------- CONTENIDOR ---------- */
+  .jobs {
+    padding: 0 0 100px;
+    max-width: none;
+    margin: 0;
+  }
+
+  /* ---------- CERCADOR ---------- */
+  .jobs__search {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    margin: 0 20px 16px;
+
+    background: #f2f2f2;
+    border: none;
+    border-radius: 10px;
+
+    padding: 12px 16px;
+  }
+
+  .jobs__search-icon {
+    color: #999;
+    font-size: 0.95rem;
+
+    flex-shrink: 0;
+  }
+
+  .jobs__search-input {
+    flex: 1;
+    border: none;
+    background: transparent;
+    outline: none;
+
+    font-family: inherit;
+    font-size: 0.9rem;
+
+    color: var(--color-text);
+
+    padding: 0;
+  }
+
+  .jobs__search-input::placeholder {
+    color: #999;
+  }
+
+  /* ---------- FILTRES ---------- */
+  .jobs__filters-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px 20px;
+  }
+
+  .jobs__filter-mobile {
+    background: none;
+    border: none;
+    cursor: pointer;
+
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+
+    font-family: inherit;
+    font-size: 0.85rem;
+    font-weight: 600;
+
+    color: var(--color-text);
+
+    padding: 0;
+  }
+
+  .jobs__filter-arrow {
+    font-size: 0.7rem;
+    color: var(--color-text-muted);
+  }
+
+  /* ---------- LLISTA ---------- */
+  .jobs__grid {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+
+    padding: 0 20px;
+  }
+
+  /* ---------- TARGETA ---------- */
+  .job-card {
+    display: grid;
+    grid-template-columns: 1fr 110px;
+    gap: 16px;
+    align-items: center;
+
+    background: #fff;
+    border-radius: 10px;
+    padding: 16px;
+
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+  }
+
+  .job-card__content {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .job-card__title {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--color-text);
+    margin-bottom: 6px;
+  }
+
+  .job-card__meta {
+    font-size: 0.75rem;
+    color: #999;
+    line-height: 1.4;
+    margin: 0;
+  }
+
+  .job-card__cta {
+    align-self: flex-start;
+
+    margin-top: 12px;
+
+    padding: 6px 16px;
+
+    font-size: 0.78rem;
+    font-weight: 600;
+
+    border: 1px solid var(--color-primary);
+    border-radius: 6px;
+
+    color: var(--color-primary);
+    background: transparent;
+
+    text-decoration: none;
+
+    cursor: pointer;
+  }
+
+  /* ---------- IMATGE GRISA A LA DRETA ---------- */
+  .job-card__image {
+    width: 110px;
+    height: 110px;
+
+    background: #e0e0e0;
+    border-radius: 8px;
+
+    overflow: hidden;
+
+    /* Assegura que es vegi el requadre encara que no hi hagi img */
+    display: block;
+  }
+
+  .job-card__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  /* ---------- BOTTOM NAV ---------- */
+  .bottom-nav {
+    display: flex;
+    justify-content: space-around;
+
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    background: #fff;
+    border-top: 1px solid #eee;
+
+    padding: 8px 0 10px;
+
+    z-index: 50;
+  }
+
+  .bottom-nav__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+
+    text-decoration: none;
+
+    font-size: 0.68rem;
+    font-weight: 500;
+
+    color: #999;
+  }
+
+  .bottom-nav__item.is-active {
+    color: var(--color-primary);
+  }
+
+  .bottom-nav__icon {
+    font-size: 1.2rem;
+  }
+
+}
+
+/* ==========================================================
+   DESKTOP · ≥ 1024px
+========================================================== */
+@media (min-width: 1024px) {
+
+  .mobile-header,
+  .bottom-nav,
+  .jobs__filters-mobile {
+    display: none;
+  }
+
+}

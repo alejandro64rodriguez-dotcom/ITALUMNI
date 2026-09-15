@@ -1,0 +1,214 @@
+/* ==========================================================
+   COMPONENT · MOBILE HOME
+   Aparença mòbil de la pàgina Home
+========================================================== */
+
+/* NOMÉS MÒBIL */
+@media (min-width: 1024px) {
+  .l-mobile-view {
+    display: none;
+  }
+}
+
+/* HEADER */
+.mobile-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 16px 20px;
+
+  background: #fff;
+}
+
+.mobile-header__left {
+  width: 60px;   /* espai per equilibrar el títol centrat */
+}
+
+.mobile-header__title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.mobile-header__right {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.mobile-header__icon {
+  background: none;
+  border: none;
+  cursor: pointer;
+
+  color: var(--color-text);
+
+  padding: 4px;
+
+  display: inline-flex;
+  align-items: center;
+}
+
+.mobile-header__avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: block;
+}
+
+.mobile-header__avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* CERCADOR */
+.mobile-search {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  margin: 0 20px 24px;
+
+  background: #f2f2f2;
+  border-radius: 10px;
+
+  padding: 12px 16px;
+}
+
+.mobile-search__icon {
+  color: #999;
+  font-size: 0.95rem;
+}
+
+.mobile-search__input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  outline: none;
+
+  font-size: 0.9rem;
+  font-family: inherit;
+
+  color: var(--color-text);
+}
+
+.mobile-search__input::placeholder {
+  color: #999;
+}
+
+/* GRAELLA DE 2 TARGETES */
+.mobile-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+
+  padding: 0 20px;
+}
+
+/* TARGETA */
+.mobile-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.mobile-card__image {
+  width: 100%;
+  height: 110px;
+
+  border-radius: 10px;
+
+  background: #e0e0e0;
+
+  margin-bottom: 12px;
+}
+
+/* Si vols gradients suaus com la referència */
+.mobile-card__image--networking {
+  background: #e0e0e0;
+}
+
+.mobile-card__image--jobs {
+  background: #e0e0e0;
+}
+
+.mobile-card__title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.mobile-card__text {
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  margin-bottom: 12px;
+  line-height: 1.4;
+}
+
+/* BOTÓ OUTLINE ROSA */
+.mobile-card__button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 10px 16px;
+
+  border: 1px solid var(--color-primary);
+  border-radius: 6px;
+
+  color: var(--color-primary);
+  text-decoration: none;
+
+  font-size: 0.82rem;
+  font-weight: 600;
+
+  background: transparent;
+
+  transition: background 0.2s ease;
+}
+
+.mobile-card__button:hover {
+  background: rgba(236, 0, 140, 0.06);
+}
+
+/* BOTTOM NAV */
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  display: flex;
+  justify-content: space-around;
+
+  background: #fff;
+  border-top: 1px solid #eee;
+
+  padding: 8px 0 10px;
+
+  z-index: 50;
+}
+
+.bottom-nav__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+
+  text-decoration: none;
+
+  font-size: 0.68rem;
+  font-weight: 500;
+
+  color: #999;
+}
+
+.bottom-nav__item.is-active {
+  color: var(--color-primary);
+}
+
+.bottom-nav__icon {
+  font-size: 1.2rem;
+}

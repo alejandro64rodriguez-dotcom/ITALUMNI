@@ -16,100 +16,116 @@
 
   <!-- ============ MOBILE VIEW ============ -->
 
-  
   <div class="l-mobile-view">
-    <div class="l-app-page">
-      <header class="app-header">
-        <input type="checkbox" id="mobile-menu-toggle" class="menu-toggle-checkbox">
-        <label for="mobile-menu-toggle" class="menu-btn" aria-label="Menu">
-          <span></span><span></span><span></span>
-        </label>
+  <div class="l-app-page">
 
-        <h1>Home</h1>
-     <a href="signup.html" class="avatar" aria-label="Perfil">&#128100;</a> 
-        <nav class="mobile-dropdown">
-           <a href="home.html" class="navbar__link is-active">Inici</a>
-          <a href="networking.html" class="navbar__link">Xarxa</a>
-          <a href="jobPortal.html" class="navbar__link">Oportunitats de feina</a>
-         <a href="events.html" class="navbar__link">Esdeveniments</a>
-        </nav>
-      </header>
+    <!-- HEADER -->
+    <header class="mobile-header">
+      <div class="mobile-header__left"></div>
 
-      <div class="search-bar">
-        <span class="search-bar__icon">&#128269;</span>
-        <input type="search" class="search-bar__input" placeholder="Search alumni...">
+      <h1 class="mobile-header__title">Home</h1>
+
+      <div class="mobile-header__right">
+        <button class="mobile-header__icon" aria-label="Estadístiques">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+               stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="12" y1="20" x2="12" y2="10"></line>
+            <line x1="18" y1="20" x2="18" y2="4"></line>
+            <line x1="6" y1="20" x2="6" y2="16"></line>
+          </svg>
+        </button>
+        <a href="signup.html" class="mobile-header__avatar" aria-label="Perfil">
+       <img src="https://i.pravatar.cc/80?img=5" alt="Perfil">        </a>
+      </div>
+    </header>
+
+    <!-- CERCADOR -->
+    <div class="mobile-search">
+      <span class="mobile-search__icon">&#128269;</span>
+      <input type="search" placeholder="Search alumni..." class="mobile-search__input">
+    </div>
+
+    <!-- CONTINGUT -->
+    <main class="l-app-content">
+
+      <div class="mobile-cards">
+
+        <article class="mobile-card">
+          <div class="mobile-card__image mobile-card__image--networking"></div>
+          <h3 class="mobile-card__title">Networking</h3>
+          <p class="mobile-card__text">Connect with professionals in your field,</p>
+          <a href="networking.html" class="mobile-card__button">Explore</a>
+        </article>
+
+        <article class="mobile-card">
+          <div class="mobile-card__image mobile-card__image--jobs"></div>
+          <h3 class="mobile-card__title">Job Opportunities</h3>
+          <p class="mobile-card__text">Discover openings tailored to your skills.</p>
+          <a href="jobPortal.html" class="mobile-card__button">Search Jobs</a>
+        </article>
+
+        <article class="mobile-card">
+  <div class="mobile-card__image mobile-card__image--events"></div>
+  <h3 class="mobile-card__title">Events</h3>
+  <p class="mobile-card__text">Join upcoming events and meetups.</p>
+  <a href="events.html" class="mobile-card__button">See Events</a>
+</article>
+
       </div>
 
-      <main class="l-app-content">
-        <div class="l-card-grid">
-          <article class="feature-card">
-            <div class="feature-card__image feature-card__image--networking"></div>
-            <h3 class="feature-card__title">Networking</h3>
-            <p class="feature-card__text">Connect with professionals in your field.</p>
-            <a href="networking.html" class="button button--outline button--block button--small">Explore</a>
-          </article>
-          <article class="feature-card">
-            <div class="feature-card__image feature-card__image--jobs"></div>
-            <h3 class="feature-card__title">Job Opportunities</h3>
-            <p class="feature-card__text">Discover openings tailored to your skills.</p>
-            <a href="jobPortal.html" class="button button--outline button--block button--small">Search Jobs</a>
-          </article>
-          <article class="feature-card">
-    <div class="feature-card__image feature-card__image--events"></div>
-    <h3 class="feature-card__title">Events</h3>
-    <p class="feature-card__text">Join upcoming events and meetups.</p>
-    <a href="events.html" class="button button--outline button--block button--small">See Events</a>
-  </article>
-        </div>
-      </main>
+    </main>
 
-      <footer>
-        <nav class="bottom-nav">
-          <a href="home.html" class="bottom-nav__item is-active">
-            <span class="bottom-nav__icon">&#127968;</span>
-            Inici
-          </a>
-          <a href="networking.html" class="bottom-nav__item">
-            <span class="bottom-nav__icon">&#128101;</span>
-            Xarxa
-          </a>
-          <a href="jobPortal.html" class="bottom-nav__item">
-            <span class="bottom-nav__icon">&#128188;</span>
-            Oportunitats de feina
-          </a>
-          <a href="signup.html" class="bottom-nav__item">
-            <span class="bottom-nav__icon">&#128100;</span>
-            Profile
-          </a>
-        </nav>
-      </footer>
-    </div>
+    <!-- BOTTOM NAV -->
+    <nav class="bottom-nav">
+      <a href="home.html" class="bottom-nav__item is-active">
+        <span class="bottom-nav__icon">&#127968;</span>
+        Home
+      </a>
+      <a href="networking.html" class="bottom-nav__item">
+        <span class="bottom-nav__icon">&#128101;</span>
+        Networking
+      </a>
+      <a href="jobPortal.html" class="bottom-nav__item">
+        <span class="bottom-nav__icon">&#128188;</span>
+        Job Portal
+      </a>
+      <a href="signup.html" class="bottom-nav__item">
+        <span class="bottom-nav__icon">&#128100;</span>
+        Profile
+      </a>
+    </nav>
+
   </div>
-
+</div>
   <!-- ============ DESKTOP VIEW ============ -->
 
   
   <div class="l-desktop-view">
-    <header class="navbar">
-      <div class="navbar__menu">
-        <input type="checkbox" id="desktop-menu-toggle" class="menu-toggle-checkbox">
-        <label for="desktop-menu-toggle" class="menu-btn" aria-label="Menu">
-          <span></span><span></span><span></span>
-        </label>
+   
+    <header class="navbar navbar--desktop">
+  
+  <a href="home.html" class="navbar__brand">
+    <span class="brand__mark">X</span>LLUMNI
+  </a>
 
-        <nav class="navbar__dropdown">
-          <a href="home.html" class="navbar__link is-active">Inici</a>
-          <a href="networking.html" class="navbar__link">Xarxa</a>
-          <a href="jobPortal.html" class="navbar__link">Oportunitats de feina</a>
-         <a href="events.html" class="navbar__link">Esdeveniments</a>
+  
+  <nav class="navbar__menu navbar__menu--inline"">
+    <a href="home.html" class="navbar__link is-active">Inici</a>
+    <a href="networking.html" class="navbar__link">Xarxa</a>
+    <a href="jobPortal.html" class="navbar__link">Oportunitats de feina</a>
+    <a href="events.html" class="navbar__link">Esdeveniments</a>
+  </nav>
 
-        </nav>
-      </div>
-
-      <a href="home.html" class="brand navbar__brand"><span class="brand__mark">X</span>LUMNI</a>
-
-      <a href="signup.html" class="button button--primary button--pill navbar__cta">Apunta't</a>
-    </header>
+  
+  <div class="navbar__actions">
+    <a href="signup.html" class="button button--outline button--pill">
+      <span class="navbar__icon">&#128100;</span> Apunta't
+    </a>
+    <a href="signup.html" class="button button--primary button--pill">
+      <span class="navbar__icon">&#128100;</span> Com et veuen?
+    </a>
+  </div>
+</header>
 
     <section class="hero">
       <div class="hero__copy">

@@ -1,0 +1,261 @@
+/* ==========================================================
+   COMPONENT · SIGNUP
+   Pàgina de registre amb imatge de fons
+========================================================== */
+
+.signup {
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 40px 20px;
+
+  /* 🖼️ Imatge de fons · canvia la ruta per la teva */
+  background-image: url('../images/signup-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  position: relative;
+}
+
+/* Capa fosca per sobre la imatge (opcional però recomanat) */
+.signup::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.15);
+  z-index: 0;
+}
+
+/* TARGETA BLANCA */
+.signup__card {
+  position: relative;
+  z-index: 1;
+
+  width: 100%;
+  max-width: 520px;
+
+  background: #fff;
+  border-radius: 12px;
+
+  padding: 48px 40px;
+
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+
+  text-align: center;
+}
+
+.signup__title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.signup__subtitle {
+  font-size: 0.88rem;
+  color: var(--color-text-muted);
+  margin-bottom: 32px;
+}
+
+/* FORMULARI */
+.signup__form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* CAMP AMB ICONA */
+.signup__field {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  background: #f5f5f7;
+  border-radius: 8px;
+
+  padding: 14px 18px;
+}
+
+.signup__icon {
+  font-size: 1rem;
+  color: #999;
+  flex-shrink: 0;
+}
+
+.signup__field input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  outline: none;
+
+  font-size: 0.9rem;
+  font-family: inherit;
+
+  color: var(--color-text);
+}
+
+.signup__field input::placeholder {
+  color: #999;
+}
+
+/* CHECKBOX */
+.signup__checkbox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  font-size: 0.82rem;
+  color: var(--color-text-muted);
+
+  text-align: left;
+
+  margin: 4px 0 8px;
+}
+
+.signup__checkbox input {
+  accent-color: var(--color-primary);
+  cursor: pointer;
+}
+
+.signup__checkbox a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+.signup__checkbox a:hover {
+  text-decoration: underline;
+}
+
+/* BOTÓ PRINCIPAL */
+.signup__submit {
+  background: var(--color-primary);
+  color: #fff;
+
+  border: none;
+  border-radius: 8px;
+
+  padding: 14px;
+
+  font-size: 0.95rem;
+  font-weight: 600;
+  font-family: inherit;
+
+  cursor: pointer;
+
+  transition: transform 0.15s ease, opacity 0.15s ease;
+}
+
+.signup__submit:hover {
+  transform: translateY(-1px);
+  opacity: 0.95;
+}
+
+/* SEPARADOR "o" */
+.signup__divider {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 12px 0 4px;
+}
+
+.signup__divider::before,
+.signup__divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #e5e5e5;
+}
+
+.signup__divider span {
+  padding: 0 12px;
+
+  font-size: 0.82rem;
+  color: #999;
+}
+
+/* BOTONS SOCIALS */
+.signup__social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  border: none;
+  border-radius: 8px;
+
+  padding: 12px;
+
+  font-size: 0.88rem;
+  font-weight: 500;
+  font-family: inherit;
+
+  cursor: pointer;
+
+  transition: opacity 0.15s ease;
+}
+
+.signup__social:hover {
+  opacity: 0.85;
+}
+
+.signup__social span {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+/* Apple · gris clar */
+.signup__social--apple {
+  background: #faf0f6;
+  color: #c94a85;
+}
+
+/* Google · vermell clar */
+.signup__social--google {
+  background: #fdecec;
+  color: #d33;
+}
+
+.signup__social--google span {
+  color: #d33;
+}
+
+/* Facebook · blau clar */
+.signup__social--facebook {
+  background: #eaf2fd;
+  color: #1877f2;
+}
+
+/* PEU */
+.signup__footer {
+  margin-top: 24px;
+
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+}
+
+.signup__footer a {
+  color: var(--color-primary);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.signup__footer a:hover {
+  text-decoration: underline;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  .signup__card {
+    padding: 32px 24px;
+  }
+
+  .signup__title {
+    font-size: 1.5rem;
+  }
+}

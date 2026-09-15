@@ -1,0 +1,250 @@
+/* ==========================================================
+   NETWORKING · MÒBIL
+========================================================== */
+
+/* ---------- HEADER MÒBIL · ocult al desktop ---------- */
+.mobile-header {
+  display: none;
+}
+
+/* ---------- BOTTOM NAV · oculta al desktop ---------- */
+.bottom-nav {
+  display: none;
+}
+
+/* ==========================================================
+   MÒBIL · < 1024px
+========================================================== */
+@media (max-width: 1023px) {
+
+  /* ---------- Amaguem el navbar desktop ---------- */
+  .navbar--desktop {
+    display: none;
+  }
+
+  /* ---------- Mostrem el header mòbil ---------- */
+  .mobile-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 16px 20px;
+
+    background: #fff;
+  }
+
+  .mobile-header__back {
+    font-size: 1.3rem;
+    color: var(--color-text);
+    text-decoration: none;
+
+    width: 32px;
+  }
+
+  .mobile-header__title {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--color-text);
+  }
+
+  .mobile-header__actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .mobile-header__chart {
+    font-size: 1.05rem;
+    color: var(--color-text);
+  }
+
+  .mobile-header__avatar {
+    width: 32px;
+    height: 32px;
+
+    border-radius: 50%;
+    overflow: hidden;
+
+    display: block;
+  }
+
+  .mobile-header__avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* ---------- CERCADOR ---------- */
+  .networking {
+    padding: 0 0 100px;
+  }
+
+  .networking__toolbar {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+
+    padding: 0 20px;
+    margin-bottom: 20px;
+  }
+
+  .networking__search {
+    background: #f2f2f2;
+    border: none;
+    border-radius: 10px;
+
+    padding: 12px 16px;
+
+    width: 100%;
+  }
+
+  .networking__search-input {
+    border: none;
+    background: transparent;
+    padding: 0;
+
+    font-size: 0.9rem;
+  }
+
+  /* Filtres amagats */
+  .networking__filters {
+    display: none;
+  }
+
+  /* ---------- GRAELLA → LLISTA VERTICAL ---------- */
+  .networking__grid {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+
+    padding: 0 20px;
+  }
+
+  .person-card {
+    display: grid;
+    grid-template-columns: 1fr 80px;
+    grid-template-areas:
+      "name image"
+      "meta image"
+      "role image";
+    column-gap: 16px;
+    align-items: center;
+
+    background: #fff;
+    border-radius: 10px;
+    padding: 16px;
+
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+  }
+
+  .person-card__name {
+    grid-area: name;
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--color-text);
+    margin-bottom: 2px;
+  }
+
+  .person-card__meta {
+    grid-area: meta;
+    font-size: 0.75rem;
+    color: #b0b0b0;
+    margin-bottom: 6px;
+  }
+
+  .person-card__role {
+    grid-area: role;
+    font-size: 0.8rem;
+    color: var(--color-text-muted);
+    line-height: 1.35;
+
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;       
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  /* Amaguem la ubicació al mòbil per netedat */
+  .person-card__location {
+    display: none;
+  }
+
+  /* Imatge grisa a la dreta (creada amb ::before) */
+  .person-card::before {
+    content: "";
+    grid-area: image;
+
+    width: 80px;
+    height: 80px;
+
+    background: #e0e0e0;
+    border-radius: 8px;
+  }
+
+  /* Botó Message amagat */
+  .person-card__cta {
+    display: none;
+  }
+
+  /* ---------- ACTIVITAT I SUGGERIMENTS ---------- */
+    .activity,
+  .suggestions {
+    display: none;
+  }
+
+  /* ---------- BOTTOM NAV ---------- */
+  .bottom-nav {
+    display: flex;
+    justify-content: space-around;
+
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    background: #fff;
+    border-top: 1px solid #eee;
+
+    padding: 8px 0 10px;
+
+    z-index: 50;
+  }
+
+  .bottom-nav__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+
+    text-decoration: none;
+
+    font-size: 0.68rem;
+    font-weight: 500;
+
+    color: #999;
+  }
+
+  .bottom-nav__item.is-active {
+    color: var(--color-primary);
+  }
+
+  .bottom-nav__icon {
+    font-size: 1.2rem;
+  }
+}
+
+/* ==========================================================
+   DESKTOP · ≥ 1024px
+========================================================== */
+@media (min-width: 1024px) {
+
+  .mobile-header {
+    display: none;
+  }
+
+  .bottom-nav {
+    display: none;
+  }
+
+}

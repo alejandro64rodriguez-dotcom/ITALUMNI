@@ -1,99 +1,177 @@
 <!DOCTYPE html>
 <html lang="ca">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Xlumni · Xarxa</title>
-<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/styles.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Xlumni · Networking</title>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
+<script src="scripts/search-networking.js"></script>
 <body data-page="networking">
 
-  <!-- APERTURA -->
   <div class="l-app-page">
 
-    <header class="navbar">
-      <div class="navbar__menu">
-        <input type="checkbox" id="desktop-menu-toggle" class="menu-toggle-checkbox">
-        <label for="desktop-menu-toggle" class="menu-btn" aria-label="Menu">
-          <span></span><span></span><span></span>
-        </label>
-
-        <nav class="navbar__dropdown">
-          <a href="home.html" class="navbar__link" data-page="home">Inici</a>
-          <a href="networking.html" class="navbar__link" data-page="networking">Xarxa</a>
-          <a href="jobPortal.html" class="navbar__link" data-page="jobPortal">Oportunitats de feina</a>
-          <a href="events.html" class="navbar__link" data-page="events">Esdeveniments</a>
-        </nav>
+    <!-- ============ HEADER · NOMÉS MÒBIL ============ -->
+    <header class="mobile-header">
+      <a href="home.html" class="mobile-header__back" aria-label="Enrere">&#8592;</a>
+      <h1 class="mobile-header__title">Networking</h1>
+      <div class="mobile-header__actions">
+        <span class="mobile-header__chart">&#128202;</span>
+        <a href="signup.html" class="mobile-header__avatar" aria-label="Perfil">
+          <img src="css/images/avatar.png" alt="Perfil">
+        </a>
       </div>
-
-      <a href="home.html" class="brand navbar__brand"><span class="brand__mark">X</span>LUMNI</a>
-
-      <a href="signup.html" class="button button--primary button--pill navbar__cta">Apunta't</a>
     </header>
 
-     <main class="l-content-page" style="padding:28px">  
-      <div style="max-width:1100px;margin:0 auto;width:100%">
-        <h1 style="margin-bottom:12px">Xarxa d'exalumnes</h1>
-        <p style="color:var(--color-text-muted);margin-bottom:18px">Explora perfils, cerca i marca els teus preferits.</p>
+    <!-- ============ NAVBAR DESKTOP ============ -->
+    <header class="navbar navbar--desktop">
+      <a href="home.html" class="navbar__brand">
+        <span class="brand__mark">X</span>LLUMNI
+      </a>
 
-        <div style="display:flex;gap:12px;margin-bottom:18px;align-items:center">
-          <input id="search" type="search" placeholder="Cerca per nom, habilitat o empresa" class="search-bar__input" style="flex:1;border:1px solid var(--color-border);padding:12px;border-radius:var(--radius-pill)">
-          <button id="clear" class="button button--outline">Netejar</button>
+      <nav class="navbar__menu navbar__menu--inline">
+        <a href="home.html" class="navbar__link" data-page="home">Home</a>
+        <a href="networking.html" class="navbar__link is-active" data-page="networking">Networking</a>
+        <a href="jobPortal.html" class="navbar__link" data-page="jobs">Job Opportunities</a>
+      </nav>
+
+      <div class="navbar__actions">
+        <button class="navbar__icon-btn" aria-label="Cerca">&#128269;</button>
+        <button class="navbar__icon-btn" aria-label="Notificacions">&#128276;</button>
+        <a href="signup.html" class="navbar__avatar" aria-label="Perfil">
+          <img src="css/images/avatar.png" alt="Perfil">
+        </a>
+      </div>
+    </header>
+
+    <main class="networking">
+
+      <div class="networking__toolbar">
+        <div class="networking__search">
+          <span class="networking__search-icon">&#128269;</span>
+          <input type="search" id="search" placeholder="Search alumni..." class="networking__search-input">
         </div>
 
-        <div id="list" class="l-card-grid"></div>
+        <div class="networking__filters">
+          <span class="networking__filters-label">Filters:</span>
+          <button class="networking__filter">Recent Activity</button>
+          <button class="networking__filter is-active">Popular</button>
+          <button class="networking__filter">Most Connected</button>
+        </div>
       </div>
+
+      <!-- GRAELLA DE PERSONES -->
+      <div class="networking__grid">
+
+        <article class="person-card">
+          <h3 class="person-card__name">Jane Smith</h3>
+          <p class="person-card__meta">Class of 2010</p>
+          <p class="person-card__role">Co-Founder at ABC Inc</p>
+          <p class="person-card__location">New York, NY</p>
+          <button class="button button--primary button--pill person-card__cta">Message</button>
+        </article>
+
+        <article class="person-card">
+          <h3 class="person-card__name">John Doe</h3>
+          <p class="person-card__meta">Class of 2015</p>
+          <p class="person-card__role">Product Manager at XYZ Corp</p>
+          <p class="person-card__location">San Francisco, CA</p>
+          <button class="button button--primary button--pill person-card__cta">Message</button>
+        </article>
+
+        <article class="person-card">
+          <h3 class="person-card__name">Alice Johnson</h3>
+          <p class="person-card__meta">Class of 2008</p>
+          <p class="person-card__role">Senior Developer at Tech Solutions</p>
+          <p class="person-card__location">Remote</p>
+          <button class="button button--primary button--pill person-card__cta">Message</button>
+        </article>
+
+        <article class="person-card">
+          <h3 class="person-card__name">David Brown</h3>
+          <p class="person-card__meta">Class of 2012</p>
+          <p class="person-card__role">Marketing Specialist at Brand Co</p>
+          <p class="person-card__location">Chicago, IL</p>
+          <button class="button button--primary button--pill person-card__cta">Message</button>
+        </article>
+
+      </div>
+
+      <!-- ACTIVITAT RECENT -->
+      <section class="activity">
+        <h2 class="activity__title">Recent Activity</h2>
+        <ul class="activity__list">
+          <li>Jane Smith started following John Doe</li>
+          <li>David Brown and John Doe connected</li>
+          <li>John Doe shared "Top 10 Product Management Tips" article</li>
+          <li>Jane Smith and David Brown connected</li>
+        </ul>
+      </section>
+
+      <!-- SUGGERIMENTS -->
+      <section class="suggestions">
+        <h2 class="suggestions__title">Suggestions for You</h2>
+
+        <div class="suggestions__list">
+
+          <article class="suggestion-card">
+            <h3 class="suggestion-card__name">Jane Smith</h3>
+            <p class="suggestion-card__role">Co-Founder at ABC Inc</p>
+            <p class="suggestion-card__location">New York, NY</p>
+            <button class="button button--primary button--pill">Connect</button>
+          </article>
+
+          <article class="suggestion-card">
+            <h3 class="suggestion-card__name">John Doe</h3>
+            <p class="suggestion-card__role">Product Manager at XYZ Corp</p>
+            <p class="suggestion-card__location">San Francisco, CA</p>
+            <button class="button button--primary button--pill">Connect</button>
+          </article>
+
+          <article class="suggestion-card">
+            <h3 class="suggestion-card__name">Alice Johnson</h3>
+            <p class="suggestion-card__role">Senior Developer at Tech Solutions</p>
+            <p class="suggestion-card__location">Remote</p>
+            <button class="button button--primary button--pill">Connect</button>
+          </article>
+
+          <article class="suggestion-card">
+            <h3 class="suggestion-card__name">David Brown</h3>
+            <p class="suggestion-card__role">Marketing Specialist at Brand Co</p>
+            <p class="suggestion-card__location">Chicago, IL</p>
+            <button class="button button--primary button--pill">Connect</button>
+          </article>
+
+        </div>
+      </section>
+
     </main>
 
+    <!-- BOTTOM NAV · NOMÉS MÒBIL -->
     <nav class="bottom-nav">
-      <a href="home.html" class="bottom-nav__item" data-page="home">
+      <a href="home.html" class="bottom-nav__item">
         <span class="bottom-nav__icon">&#127968;</span>
-        Inici
+        Home
       </a>
-      <a href="networking.html" class="bottom-nav__item" data-page="networking">
+      <a href="networking.html" class="bottom-nav__item is-active">
         <span class="bottom-nav__icon">&#128101;</span>
-        Xarxa
+        Networking
       </a>
-      <a href="jobPortal.html" class="bottom-nav__item" data-page="jobPortal">
+      <a href="jobPortal.html" class="bottom-nav__item">
         <span class="bottom-nav__icon">&#128188;</span>
-        Oportunitats de feina
+        Job Portal
       </a>
-      <a href="signup.html" class="bottom-nav__item" data-page="profile">
+      <a href="signup.html" class="bottom-nav__item">
         <span class="bottom-nav__icon">&#128100;</span>
         Profile
       </a>
     </nav>
 
-    <footer class="site-footer">
-      <div class="site-footer__main">
-        <a href="home.html" class="brand brand--footer"><span class="brand__mark">X</span>LUMNI</a>
-        <nav class="site-footer__links">
-          <a href="#">Sobre nosaltres</a>
-          <a href="#">Funcionalitats</a>
-          <a href="#">Centre d'ajuda</a>
-          <a href="#">Contacta'ns</a>
-          <a href="#">FAQs</a>
-          <a href="jobPortal.html">Oportunitats laborals</a>
-        </nav>
-      </div>
-      <div class="site-footer__bottom">
-        <select aria-label="Language"><option>Català</option></select>
-        <p>© 2026 Xllumni · Privadesa · Termes d'ús</p>
-        <div class="site-footer__socials">
-          <a href="#" aria-label="Facebook">f</a>
-          <a href="#" aria-label="LinkedIn">in</a>
-          <a href="#" aria-label="YouTube">&#9658;</a>
-        </div>
-      </div>
-    </footer>
-
   </div>
-  <!-- CIERRE-->
-
+  <script src="data/mockData.js"></script>
   <script src="scripts/Utils.js"></script>
   <script src="scripts/App.js"></script>
-  <script src="data/mockData.js" defer></script>
 
 </body>
 </html>
