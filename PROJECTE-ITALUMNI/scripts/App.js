@@ -24,7 +24,7 @@
               aria-pressed="${active}" aria-label="Marca com a favorit">${active ? '★' : '☆'}</button>`;
   }
 
-  function renderAlumniCard(alumni) {
+  function renderAlumniCard(alumni) {   
     return `
       <article class="feature-card" data-id="${alumni.id}">
         ${favoriteButtonHTML('alumni', alumni.id)}
@@ -32,6 +32,9 @@
         <h3 class="feature-card__title">${alumni.name}</h3>
         <p class="feature-card__text">${alumni.role} · ${alumni.company}<br>${alumni.location}</p>
         <p class="feature-card__text">${alumni.skills.join(', ')}</p>
+        <button class="button button--primary card__message">
+        Message
+      </button>
       </article>`;
   }
 
