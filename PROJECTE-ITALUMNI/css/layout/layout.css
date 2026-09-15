@@ -30,6 +30,9 @@
 .l-app-page > main {
   flex: 1;
 }
+.l-app-page {
+  padding-bottom: 96px;
+}
   
 
 .l-app-content {

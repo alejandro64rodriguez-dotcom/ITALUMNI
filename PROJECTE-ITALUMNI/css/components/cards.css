@@ -31,6 +31,9 @@
   background: linear-gradient(135deg, #7c3aed, #a78bfa);
 }
 
+.feature-card__image--events {
+  background: linear-gradient(135deg, #ff8ac0, #ec008c);
+}
 .feature-card__title {
   font-size: 1rem;
   font-weight: 700;
