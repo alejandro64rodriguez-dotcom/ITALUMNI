@@ -33,11 +33,9 @@
 
 .avatar {
 
-  display: block;
+  display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 2%;
-  padding-left: 2.5%;
   width: 36px;
   height: 36px;
   border-radius: 50%;
