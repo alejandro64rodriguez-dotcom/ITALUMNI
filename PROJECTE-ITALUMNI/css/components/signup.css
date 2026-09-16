@@ -12,8 +12,10 @@
 
   padding: 40px 20px;
 
-  /* 🖼️ Imatge de fons · canvia la ruta per la teva */
-  background-image: url('../images/signup-bg.jpg');
+  
+background:
+    linear-gradient(rgba(0, 0, 0, .35), rgba(0, 0, 0, .35)),
+    url("../images/image2.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -21,7 +23,7 @@
   position: relative;
 }
 
-/* Capa fosca per sobre la imatge (opcional però recomanat) */
+/* Capa fosca per sobre la imatge */
 .signup::before {
   content: "";
   position: absolute;
@@ -153,7 +155,7 @@
   opacity: 0.95;
 }
 
-/* SEPARADOR "o" */
+/* SEPARADOR */
 .signup__divider {
   position: relative;
 

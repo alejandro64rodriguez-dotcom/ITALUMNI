@@ -223,7 +223,7 @@
     cursor: pointer;
   }
 
-  /* ---------- IMATGE GRISA A LA DRETA ---------- */
+  /* ---------- IMATGE A LA DRETA ---------- */
   .job-card__image {
     width: 110px;
     height: 110px;
@@ -233,7 +233,6 @@
 
     overflow: hidden;
 
-    /* Assegura que es vegi el requadre encara que no hi hagi img */
     display: block;
   }
 

@@ -1,5 +1,5 @@
 /* ==========================================================
-   COMPONENT · MOBILE HOME
+   MOBILE HOME
    Aparença mòbil de la pàgina Home
 ========================================================== */
 
@@ -125,7 +125,6 @@
   margin-bottom: 12px;
 }
 
-/* Si vols gradients suaus com la referència */
 .mobile-card__image--networking {
   background: #e0e0e0;
 }

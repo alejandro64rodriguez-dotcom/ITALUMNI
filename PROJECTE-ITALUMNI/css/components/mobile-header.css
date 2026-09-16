@@ -5,7 +5,7 @@
 
 /* Header móvil */
 
-.app-header {
+/* .app-header {
 
   position: relative;
 
@@ -26,12 +26,12 @@
   font-size: 1.1rem;
 
   font-weight: 700;
-}
+} */
 
 
 /* Avatar */
 
-.avatar {
+/* .avatar {
 
   display: flex;
   align-items: center;
@@ -40,7 +40,7 @@
   height: 36px;
   border-radius: 50%;
   background: var(--gradient-primary);
-}
+} */
 
 
 
@@ -49,7 +49,7 @@
 ========================================================== */
 
 
-.mobile-dropdown {
+/* .mobile-dropdown {
 
   position: absolute;
   top: 70%;
@@ -77,12 +77,11 @@
   color: var(--color-text);
 
 
-  /* border-bottom: 1px solid var(--color-border); */
 }
+ */
 
 
-
-.mobile-dropdown a:last-child {
+/* .mobile-dropdown a:last-child {
 
   border-bottom: none;
 
@@ -90,10 +89,9 @@
 
 
 
-/* Obrir menú */
 
 .menu-toggle-checkbox:checked ~ .mobile-dropdown {
 
   max-height: 320px;
 
-}
+} */

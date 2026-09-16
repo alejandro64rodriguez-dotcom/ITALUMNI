@@ -170,7 +170,7 @@
     display: none;
   }
 
-  /* Imatge grisa a la dreta (creada amb ::before) */
+  /* Imatge gris*/
   .person-card::before {
     content: "";
     grid-area: image;

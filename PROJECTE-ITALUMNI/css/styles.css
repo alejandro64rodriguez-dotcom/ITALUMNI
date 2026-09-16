@@ -27,13 +27,13 @@
 ========================================================== */
 
 @import url("components/navbar.css");
-@import url("components/hamburger.css");
+/* @import url("components/hamburger.css"); */
 @import url("components/search-bar.css");
 @import url("components/bottom-nav.css");
 @import url("components/cards.css");
 @import url("components/forms.css");
 @import url("components/toast.css");
-@import url("components/mobile-header.css");
+/* @import url("components/mobile-header.css"); */
 @import url("components/jobs.css");
 @import url("components/signup.css");
 @import url("components/mobile-home.css");
@@ -43,7 +43,7 @@
    PAGES
 ========================================================== */
 
-@import url("pages/signup.css");
+/* @import url("pages/signup.css"); */
 
 
 /* ==========================================================
@@ -51,4 +51,4 @@
 ========================================================== */
 
 @import url("responsive/tablet.css");
-@import url("responsive/desktop.css");
+@import url("responsive/desktop.css"); 
